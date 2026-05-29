@@ -7,15 +7,21 @@
 <body>
   <script>
     var nums = [
-      "553187935812",
-      "553182167280",
-      "553184987334",
-      "553186406745",
-      "553183087513",
-      "553183257103"
+      "553181099974",
+      "553185520460",
+      "553182918322",
+      "553185138343",
+      "553188790470",
+      "553185630844"
+    ];
+    var msgs = [
+      "Ol%C3%A1!%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20com%20o%20Giovanni",
+      "Oi%2C%20tenho%20uma%20d%C3%BAvida%20e%20queria%20falar%20com%20o%20Giovanni",
+      "Tenho%20uma%20d%C3%BAvida%20e%20gostaria%20de%20falar%20com%20o%20Giovanni"
     ];
     var n = nums[Math.floor(Math.random() * nums.length)];
-    location.href = "https://api.whatsapp.com/send?phone=" + n + "&text=Venho%20do%20youtube%20e%20a%20palavra%20secreta%20%C3%A9%3A%20APOSTILA";
+    var m = msgs[Math.floor(Math.random() * msgs.length)];
+    location.href = "https://api.whatsapp.com/send?phone=" + n + "&text=" + m;
   </script>
 </body>
 </html>
